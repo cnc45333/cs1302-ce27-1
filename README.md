@@ -50,6 +50,8 @@ command depends on your present working directory), then please note that contex
    $ git config --global user.email
    ```
 
+<hr/>
+
 ## Exercise Steps
 
 1. Once each group member has completed the Getting Started steps, 
@@ -210,6 +212,8 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
+<hr/>
+
 For this next checkpoint, we will have you implement a simple sorting algorithm called
 [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort). There are many different ways to
 explain the execution of this algorithm. We will take the approach of breaking up the
@@ -302,7 +306,11 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
    push the changes up to the repository on GitHub. Everyone else should pull the changes
    after that.
    
+1. View the condensed, graphical version of your Git log using `git adog`.
+
 **CHECKPOINT**
+
+<hr/>
 
 
 **CHECKPOINT**
