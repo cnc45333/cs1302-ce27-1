@@ -216,7 +216,7 @@ explain the execution of this algorithm. We will take the approach of breaking u
 algorithm into two methods, `bubble` and `bubbleSort` that work together to sort an array:
 
 1. **Bubble:** This method takes an array, two valid index positions `lo` and `hi` (both inclusive) 
-   within the array such that `lo <= hi` and a `Comparator` that be used to perform comparisions. 
+   within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions. 
    The method iterates over the array from `lo` to `hi - 1` (inclusive) and swaps adjacent elements
    that are not in order according to the ordering induced by the comparator. Here is the signature
    for the method:
@@ -251,7 +251,7 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
    **the largest value in the range is guaranteed to be at index `hi`.**
    
 1. **Bubble Sort**: This method also takes an array, two valid index positions `lo` and `hi` (both inclusive) 
-   within the array such that `lo <= hi` and a `Comparator` that be used to perform comparisions.
+   within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions.
    The method simply calls `bubble(array, 0, hi)` for all valid `hi` values **in reverse order**
    except for `0`. Here is the signature for the method:
 
