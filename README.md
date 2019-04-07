@@ -213,7 +213,7 @@ command depends on your present working directory), then please note that contex
 For this next checkpoint, we will have you implement a simple sorting algorithm called
 [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort). There are many different ways to
 explain the execution of this algorithm. We will take the approach of breaking up the
-algorithm into two methods, `bubble` and `bubbleSort` that work together to sort an array:
+algorithm into two methods, `bubble` and `bubbleSort` that work together to sort an array.
 
 1. **Bubble:** This method takes an array, two valid index positions `lo` and `hi` (both inclusive) 
    within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions. 
@@ -249,7 +249,15 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
    This method gets its name from the idea that a call "bubbles" the bigger values to the right
    of the specified range (i.e., from `lo` to `hi`). After a call to `bubble`, 
    **the largest value in the range is guaranteed to be at index `hi`.**
-   
+
+1. As a group, pick a **DRIVER.**, then the have the **DRIVER** implement the `bubble` method
+   in `BubbleSort.java`. You may want to implement a static `swap` method to help you perform
+   the adjacent swaps. Be sure to include some code in the `main` method to test the 
+   implementation. Once your group is confident that the code compiles and runs correctly,
+   have the **DRIVER** stage and commit `BubbleSort.java` to their local repository, then
+   push the changes up to the repository on GitHub. Everyone else should pull the changes
+   after that.
+
 1. **Bubble Sort**: This method also takes an array, two valid index positions `lo` and `hi` (both inclusive) 
    within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions.
    The method simply calls `bubble(array, 0, hi)` for all valid `hi` values **in reverse order**
@@ -287,15 +295,6 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
       bubble(array, 0, 4, Integer::compareTo);
       System.out.println(Arrays.toString(array)); // [ 1, 2, 3, 4, 5 ]
       ```
-   
-1. As a group, pick a **DRIVER.**, then the have the **DRIVER** implement the `bubble` method
-   in `BubbleSort.java`. You may want to implement a static `swap` method to help you perform
-   the adjacent swaps. Be sure to include some code in the `main` method to test the 
-   implementation. Once your group is confident that the code compiles and runs correctly,
-   have the **DRIVER** stage and commit `BubbleSort.java` to their local repository, then
-   push the changes up to the repository on GitHub. Everyone else should pull the changes
-   after that.
-
 1. As a group, pick a _new_ **DRIVER.**, then the have the **DRIVER** implement the `bubbleSort` 
    method in `BubbleSort.java`. Be sure to include some code in the `main` method to test the 
    implementation. Once your group is confident that the code compiles and runs correctly,
