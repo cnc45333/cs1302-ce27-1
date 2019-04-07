@@ -219,7 +219,7 @@ For this next checkpoint, we will have you implement a simple sorting algorithm 
 explain the execution of this algorithm. We will take the approach of breaking up the
 algorithm into two methods, `bubble` and `bubbleSort` that work together to sort an array.
 
-1. **Bubble:** This method takes an array, two valid index positions `lo` and `hi` (both inclusive) 
+1. **Bubble Algo:** This method takes an array, two valid index positions `lo` and `hi` (both inclusive) 
    within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions. 
    The method iterates over the array from `lo` to `hi - 1` (inclusive) and swaps adjacent elements
    that are not in order according to the ordering induced by the comparator. Here is the signature
@@ -262,7 +262,7 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
    push the changes up to the repository on GitHub. Everyone else should pull the changes
    after that.
 
-1. **Bubble Sort**: This method also takes an array, two valid index positions `lo` and `hi` (both inclusive) 
+1. **Bubble Sort Algo**: This method also takes an array, two valid index positions `lo` and `hi` (both inclusive) 
    within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions.
    The method simply calls `bubble(array, 0, hi)` for all valid `hi` values **in reverse order**
    except for `0`. Here is the signature for the method:
