@@ -237,7 +237,7 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
       System.out.println(Arrays.toString(array)); // [ 2, 1, 3, 4, 5 ]
       ```
       
-  1.  Here is another example before and after calling `bubble(array, 0, 4, Integer::compareTo)`
+   1. Here is another example before and after calling `bubble(array, 0, 4, Integer::compareTo)`
       on an array with elements `[ 3, 2, 1, 4, 5 ]` :
       
       ```java
