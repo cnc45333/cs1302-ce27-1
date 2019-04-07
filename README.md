@@ -31,6 +31,25 @@ command depends on your present working directory), then please note that contex
    
    1. [Setup your SSH Keys on Nike and GitHub](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-ssh-keys)
 
+1. **Individully:** If you haven't already done this in a previous exercise, setup your Git username 
+   and email on Nike by modifiying and executing the commands below. 
+   When setting the `user.name` property, please provide your name as it appears on eLC and
+   Athena. If you have a preferred name, then you may include it in parentheses. For the
+   `user.email` property, please use your `@uga.edu` email address:
+
+   ```
+   $ git config --global user.name "Mona Lisa (Liz)"
+   $ git config --global user.email "email@uga.edu"
+   ```
+   
+   You can verify that these properties were setup correctly by observing the output of
+   the following commands:
+   
+   ```
+   $ git config --global user.name
+   $ git config --global user.email
+   ```
+
 ## Exercise Steps
 
 1. Once each group member has completed the Getting Started steps, 
@@ -179,222 +198,19 @@ command depends on your present working directory), then please note that contex
    
 1. **OTHER GROUP MEMBERS:** Update your local copy of the repository with the latest
    changes from the repository hosed on GitHub. If successful, everyone should now be 
-   able to see the updated exercise files in their local copies!   
+   able to see the updated exercise files in their local copies! Furthermore    
+
+1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
+   If you do not have `git adog` alias setup, then enable it using the following
+   caommand:
+   
+   ```
+   $ git config --global alias.adog "log --all --decorate --oneline --graph"
+   ```
 
 **CHECKPOINT**
 
-   
-
-Using Maven, create a project directory for this exercise called `cs1302-ce25` with a primary 
-   package called `cs1302.ce25`.
-
-1. Change into the `cs1302-ce25` directory that you just created using Maven, then do the
-   following:
-   
-   1. Initialize a new Git repository:
-      
-      ```
-      $ git init
-      ```
-      
-   1. Create a [`.gitignore`](https://git-scm.com/docs/gitignore) (hidden file) with the following contents:
-   
-      ```
-      bin/
-      doc/
-      target/
-      *.class
-      hs_err_pid*
-      *~
-      \#*\#
-      core.*
-      ```
-      
-      Add and commit the `.gitignore` file to the repository.
-      
-   1. Update the POM so that the project works with Java 8. After that, add and commit the `pom.xml` file to 
-      the repository.
-   
-   1. Delete the Maven-generated driver (i.e., `src/main/java/cs1302/ce25/App.java`) and the unit test files 
-      (i.e., everything under `src/test/java`). We won't add the `src` folder to the repository at this time
-      because it only contains empty subdirectories. Git will not track empty directories.
-   
-## Exercise Steps
-
-1. For this checkpoint, you will implement your own version of the Unix `find` command.
-   Here is an example:
-   
-   ```
-   $ find src
-   ```
-   
-   ```
-   src
-   src/main
-   src/main/java
-   src/main/java/cs1302
-   src/main/java/cs1302/ce25
-   src/main/java/cs1302/ce25/Find.java
-   ```
-   
-1. Create a `cs1302.ce25.Find` class based on code below that provides some
-   starter code for your recursive implementation of the Unix `find` command:
-
-   ```java
-   public class Find {
-   
-       public static void printFile(File file) {
-           // TODO implement printFile
-       } // printFile
-    
-       public static void main(String[] args) {
-           if (args.length == 0) {
-               args = new String[] { "." }; // default to "."
-           } // if
-           // TODO implement stream code
-       } // main
-
-   } // Find
-   ```
-   
-   Before this code will compile, you will need to manually setup the package 
-   statement and imports.
-    
-1. **Next, use Maven to compile and run the code.** You won't see any output at
-   this point. Please use the `exec:java` phase to run. To provide command-line
-   arguments to your program through maven, you will need to specify the 
-   command-line arguments as a space-separated
-   string with the `-Dexec.args` option (e.g., `-Dexec.args="src target"`) in 
-   addition to providing the `-Dexec.mainClass` option. 
-   
-   * Once you figure out how to run it, please write down that command
-     in your notes.
-   
-   * After you've confirmed that it compiles and runs, please add and commit
-     your changes to the repository.
-
-1. Use a stream to map all of the command-line arguments in the `main` method 
-   to new [`File`](https://docs.oracle.com/javase/8/docs/api/java/io/File.html)
-   objects, then call `printFile` for-each of them. For testing 
-   purposes, you may want to put some kind of print statement in the `printFile` method.
-   After verifying that your code compiles and works using Maven, 
-   please add and commit `Find.java`.
-   
-1. Implement the `printFile` method. 
-
-   1. If the file or directory denoted by the `File` object does not exists, then
-      print an error similar to the following to standard error where `%s` denotes
-      the pathname string for the `File` object:
-      
-      ```
-      find: `%s': No such file or directory
-      ```
-      
-   1. the file or directory denoted by the `File` object does exist, print the 
-      pathname string for the `File` objectc to standard output. Additionally,
-      if the `File` object refers to a directory, then **use recusion** to do the 
-      same for all files in the directory. For this part, you may use a stream or a 
-      for-each loop.
-      
-   After verifying that your code compiles and works using Maven, 
-   please stage and commit your changes to the repository.
-
-**CHECKPOINT**
-
-1. For this checkpoint, adapt your `Find.java` code to create a 
-   `cs1302.ce25.Tree` class that provides a recursive implementation of the 
-   Unix [`Tree`](https://en.wikipedia.org/wiki/Tree_(command)) command. 
-   Here is an example:
-   
-   ```
-   $ tree src
-   ```
-   
-   ```
-   |---src
-   |   |---main
-   |   |   |---java
-   |   |   |   |---cs1302
-   |   |   |   |   |---ce25
-   |   |   |   |   |   |---Find.java
-   |   |   |   |   |   |---Tree.java
-   ```
-   
-   ```
-   $ tree src/main/java
-   ```
-   
-   ```
-   |---java
-   |   |---cs1302
-   |   |   |---ce25
-   |   |   |   |---Find.java
-   |   |   |   |---Tree.java
-   ```
-   
-   Remember, you can add additional parameters to methods, as needed, to
-   help you accomplish a given sub-problem.
-   
-1. **Next, use Maven to compile and run the code.** Please use the `exec:java` phase to run.
-   You will need to specify the command-line arguments as a space-separated
-   string with the `-Dexec.args` option (e.g., `-Dexec.args="src"`) in addition
-   to providing the `-Dexec.mainClass` option. 
-   
-   * Once you figure out how to run it, please write down that command
-     in your notes.
-   
-   * After you've confirmed that it compiles and runs, please add and commit
-     your changes to the repository.
-
-**CHECKPOINT**
-
-1. For this checkpoint, you will implement a recursive method called `shrinkString`.
-   Create a `cs1302.ce25.ShrinkString` class that contains a `main` method as well
-   as the following method:
-   
-   ```java
-   public static String shrinkString(String str)
-   ```
-
-   Given a string, return recursively a "shrinked" string where adjacent characters 
-   that are the same have been reduced to a single character. 
-   Here are some examples:
-
-   | Example                   | Result   |
-   |---------------------------|----------|
-   | `shrinkString("yyzzza")`  | `"yza"`  |
-   | `shrinkString("abbbcdd")` | `"abcd"` |
-   | `shrinkString("Hello")`   | `"Helo"` |
-   | `shrinkString("abcd")`    | `"abcd"` |
-   | `shrinkString("  ")`      | `" "`    |
-   | `shrinkString("")`        | `""`     |
-   
-   In the `main` method, create an array of strings that contains the strings used in the
-   eamples above. Next, create another method called `printShrunkString` with the
-   following signature:
-   
-   ```java
-   public static printShrunkStrings(String[] array, int i)
-   ```
-   
-   Given an `array` and an index `i`, print the result of calling `shrinkString`
-   on the element at index `i`, then recursively print the remaining elements. You
-   may assume the first call provides a valid index `i`. You may not assume
-   the array is non-empty.
-   
-   In the `main` method, use your `printShrunkString` method to print the result 
-   of calling `shrinkString` on each element of the array.
-   
-1. **Use Maven to compile and run the code.** Please use the `exec:java` phase to run.
-   You will need to specify the command-line arguments as a space-separated
-   string with the `-Dexec.args` option (e.g., `-Dexec.args="src"`) in addition
-   to providing the `-Dexec.mainClass` option. 
-   
-   * Once you figure out how to run it, please write down that command
-     in your notes.
-   
-   * After you've confirmed that it compiles and runs, please add and commit
-     your changes to the repository.
+1. 
 
 **CHECKPOINT**
 
