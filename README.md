@@ -278,6 +278,15 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
       | `[ 4, 2, 3, 1, 5 ]` | `bubble(array, 0, 3, c);` | `[ 2, 3, 1/ 4, 5 ]`         |
       | `[ 2, 3, 1, 4, 5 ]` | `bubble(array, 0, 2, c);` | `[ 2, 1/ 3, 4, 5 ]`         |
       | `[ 2, 1, 3, 4, 5 ]` | `bubble(array, 0, 1, c);` | `[ 1/ 2, 3, 4, 5 ]`         |
+      
+   1. Here is an example before and after calling `bubbleSort(array, 0, 4, Integer::compareTo)`
+      on an array with elements `[ 5, 4, 2, 3, 1 ]`:
+      
+      ```java
+      System.out.println(Arrays.toString(array)); // [ 5, 4, 2, 3, 1 ]
+      bubble(array, 0, 4, Integer::compareTo);
+      System.out.println(Arrays.toString(array)); // [ 1, 2, 3, 4, 5 ]
+      ```
    
 1. As a group, pick a **DRIVER.**, then the have the **DRIVER** implement the `bubble` method
    in `BubbleSort.java`. You may want to implement a static `swap` method to help you perform
