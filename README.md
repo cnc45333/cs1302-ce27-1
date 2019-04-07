@@ -322,6 +322,11 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
       
 **CHECKPOINT**
 
+1. Next time, your group will work on the **Selection Sort Algo** and some other interesting
+   algorithms.
+
+**NOT A CHECKPOINT**
+
 <hr/>
 
 
