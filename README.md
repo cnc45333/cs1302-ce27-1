@@ -229,9 +229,6 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
    public static <T> void bubble(T[] array, int lo, int hi, Comparator<T> c)
    ```
    
-   Here is an example, assuming an array of integers and the standard, ascending comparator 
-   `c = Integer::compareTo`:
-   
    1. Here is an example of before and after calling `bubble(array, 0, 4, Integer::compareTo)`
       on an array with elements `[ 2, 3, 1, 4, 5 ]`:
       
