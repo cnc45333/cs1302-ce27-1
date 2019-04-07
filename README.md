@@ -312,11 +312,13 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
    let the problem size be defined as `n = hi - lo + 1`. 
    
    1. What is `T(n)` for a call to `bubbleSort` if the set of key processing steps includes
-      only swap operations? Include the diagram for your derivation.
+      only swap operations? Include the diagram for your derivation. As `bubbleSort` calls
+      `bubble`, this will involve mathematical function composition.
       
    1. What is `T(n)` for a call to `bubbleSort` if the set of key processing steps includes
       only comparison operations (i.e., calls to `c.compare`)? Include the diagram
-      for your derivation.
+      for your derivation. As `bubbleSort` calls
+      `bubble`, this will involve mathematical function composition.
       
 **CHECKPOINT**
 
