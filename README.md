@@ -307,6 +307,19 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
 
 **CHECKPOINT**
 
+1. In your notes, write down the source code for `bubble` and `bubbleSort`, then derive the
+   timing functions for two different algorithm analyses of the **Bubble Sort Algo**. Here,
+   let the problem size be defined as `n = hi - lo + 1`. 
+   
+   1. What is `T(n)` for a call to `bubbleSort` if the set of key processing steps includes
+      only swap operations? Include the diagram for your derivation.
+      
+   1. What is `T(n)` for a call to `bubbleSort` if the set of key processing steps includes
+      only comparison operations (i.e., calls to `c.compare`)? Include the diagram
+      for your derivation.
+      
+**CHECKPOINT**
+
 <hr/>
 
 
