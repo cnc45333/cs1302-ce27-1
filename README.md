@@ -293,7 +293,7 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
       
       ```java
       System.out.println(Arrays.toString(array)); // [ 5, 4, 2, 3, 1 ]
-      bubble(array, 0, 4, Integer::compareTo);
+      bubbleSort(array, 0, 4, Integer::compareTo);
       System.out.println(Arrays.toString(array)); // [ 1, 2, 3, 4, 5 ]
       ```
 1. As a group, pick a _new_ **DRIVER.**, then the have the **DRIVER** implement the `bubbleSort` 
