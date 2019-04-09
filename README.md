@@ -1,4 +1,4 @@
-# cs1302-ce27 Paired Algorithm Analysis
+# cs1302-ce27 Paired Sorting Algorithm Analysis
 
 In this class exercise, students will implement two different algorithms for
 sorting an array, then derive the timing functions for those algorithms for
