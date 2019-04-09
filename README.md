@@ -65,15 +65,15 @@ command depends on your present working directory), then please note that contex
    | **Field**            | **Value**                                                        |
    |----------------------|------------------------------------------------------------------|
    | **Owner**            | _your account_                                                   |
-   | **Repository Name**  | `cs1302-ce27`                                                    |
-   | **Description**      | `Repository for Class Exercise 27`                               |
+   | **Repository Name**  | `cs1302-ce27-ce28`                                                    |
+   | **Description**      | `Repository for Class Exercise 27 and 28`                               |
    | **Public / Private** | Private -- You choose who can see and commit to this repository. |
    
    Do **NOT** "Initialize this repository with a README". 
    Also, do **NOT** click on the dropdowns for a `.gitignore` or license file.
    
    Once complete, you should have a GitHub-hosted private Git repository at the following
-   website URL: `https://github.com/your_username/cs1302-ce27` where `your_username` is
+   website URL: `https://github.com/your_username/cs1302-ce27-ce28` where `your_username` is
    your GitHub account username. 
    
    Do **NOT** follow any of the setup instructions at this time.
@@ -93,13 +93,13 @@ command depends on your present working directory), then please note that contex
    Before continuing, make sure each group member has access to the repository website.
   
 1. **GROUP MEMBER 2:** On Nike, use Maven to create a project directory for this exercise 
-   called `cs1302-ce27` with a primary package called `cs1302.ce27`, then do the change
+   called `cs1302-ce27-ce28` with a primary package called `cs1302.sorting`, then change
    into that directory and do the following:
    
    1. Delete the Maven-generated driverand the unit test files:
    
       ```
-      $ rm -f src/main/java/cs1302/ce27/App.java
+      $ rm -f src/main/java/cs1302/sorting/App.java
       $ rm -rf src/main/test
       ```
    
@@ -130,8 +130,8 @@ command depends on your present working directory), then please note that contex
    1. Create blank source code files for the remaining checkpoints:
    
       ```
-      $ touch src/main/java/cs1302/ce27/BubbleSort.java
-      $ touch src/main/java/cs1302/ce27/SelectionSort.java
+      $ touch src/main/java/cs1302/sorting/BubbleSort.java
+      $ touch src/main/java/cs1302/sorting/SelectionSort.java
       ```
 
       Add and commit `src` to the local repository.
@@ -142,7 +142,7 @@ command depends on your present working directory), then please note that contex
       then follow these instructions on Nike to link your local repository to the one on GitHub:
       
       ```
-      $ git remote add origin git@github.com:group_member_one/cs1302-ce27.git
+      $ git remote add origin git@github.com:group_member_one/cs1302-ce27-ce28.git
       $ git push -u origin master
       ```
       
@@ -154,7 +154,7 @@ command depends on your present working directory), then please note that contex
    clone the GitHub-hosted Git repostory on your Nike account:
    
    ```
-   $ git clone git@github.com:group_member_one/cs1302-ce27.git
+   $ git clone git@github.com:group_member_one/cs1302-ce27-ce28.git
    ```
    
    Change into the directory and confirm that everything is there! You can verify that
