@@ -54,7 +54,7 @@ command depends on your present working directory), then please note that contex
 
 ## Exercise Steps
 
-1. Once each group member has completed the Getting Started steps, 
+1. Once each group member has completed the **Getting Started steps**, 
    pick an ordering for the group members (e.g., Group Member 1, Group Member 2, etc.).
    If a step is being performed by one group member, then everyone is expected
    to watch, pay attention, and take notes.
