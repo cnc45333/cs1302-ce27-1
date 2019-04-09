@@ -100,7 +100,7 @@ command depends on your present working directory), then please note that contex
    
       ```
       $ rm -f src/main/java/cs1302/sorting/App.java
-      $ rm -rf src/main/test
+      $ rm -rf src/test
       ```
    
    1. Initialize a new local Git repository:
