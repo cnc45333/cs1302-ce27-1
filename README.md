@@ -138,8 +138,9 @@ command depends on your present working directory), then please note that contex
 
    1. Before proceeding, ensure that all tracked files are committed. 
 
-   1. Visit the repository website on GitHub and copy the "SSH" URL under "Quick setup",
-      then follow these instructions on Nike to link your local repository to the one on GitHub:
+   1. Visit the repository website on GitHub and copy the "SSH" URL (i.e., the `git@github...` URL)
+      under "Quick setup", then follow these instructions on Nike to link your local repository 
+      to the one on GitHub:
       
       ```
       $ git remote add origin git@github.com:group_member_one/cs1302-ce27-ce28.git
