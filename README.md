@@ -223,8 +223,8 @@ algorithm into two methods, `bubble` and `bubbleSort` that work together to sort
 1. **Bubble Algo:** This is a helper algorithm that does not, itself, sort the array. 
    This method takes an array, two valid index positions `lo` and `hi` (both inclusive) 
    within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions. 
-   The method iterates over the array from `lo` to `hi - 1` (inclusive) and swaps adjacent elements
-   that are not in order according to the ordering induced by the comparator (i.e., calling 
+   The method iterates over the array from `lo` to `hi - 1` (inclusive) and **swaps adjacent elements**
+   that are **not in order** according to the ordering induced by the comparator (i.e., calling 
    `c.compare`. Here is the signature for the method:
    
    ```java
