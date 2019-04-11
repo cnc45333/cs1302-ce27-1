@@ -96,7 +96,7 @@ command depends on your present working directory), then please note that contex
    called `cs1302-ce27-ce28` with a primary package called `cs1302.sorting`, then change
    into that directory and do the following:
    
-   1. Delete the Maven-generated driverand the unit test files:
+   1. Delete the Maven-generated driver and the unit test files:
    
       ```
       $ rm -f src/main/java/cs1302/sorting/App.java
