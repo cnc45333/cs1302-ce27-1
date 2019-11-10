@@ -54,10 +54,9 @@ command depends on your present working directory), then please note that contex
    Nike and on your GitHub account.
    
    * To see the copy of your public key on Nike:
-   ```
-   $ cat ~/.ssh/id_rsa.pub
-   ```
-   
+     ```
+     $ cat ~/.ssh/id_rsa.pub
+     ```
    * To see the copy of your public key on GitHub, please visit: https://github.com/settings/keys
    
 **CHECKPOINT**
