@@ -1,5 +1,7 @@
 # cs1302-ce27 Paired Sorting Algorithm Analysis
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 In this class exercise, students will implement two different algorithms for
 sorting an array, then derive the timing functions for those algorithms for
 the purposes of completing a set of algorithm analysese at a later time. Code
@@ -167,9 +169,9 @@ command depends on your present working directory), then please note that contex
    ```
    
 1. **NEXT GROUP MEMBER:** On Nike, write out the basic skeleton code for a driver class
-   in `BubbleSort.java` (we'll write the algorithm in there later), ensuring that the 
-   package statement is correct and the file compiles and runs using Maven. Then, stage
-   and commit the change to your local repository.
+   in `BubbleSort.java` (you don't need to implement it now; we'll write the algorithm 
+   in there later), ensuring that the  package statement is correct and the file compiles 
+   and runs using Maven. Then, stage and commit the change to your local repository.
    
    Everyone should notice that although you comitted this to your local copy of the
    repository, the change is not automatically refelected in the other local copies
