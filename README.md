@@ -1,4 +1,4 @@
-# cs1302-ce27 Preparing for Paired Sorting Algorithm Analysis
+# cs1302-ce27 Preparing for Paired Programming
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 
