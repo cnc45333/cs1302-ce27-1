@@ -6,6 +6,11 @@ In this class exercise, students will prepare for the next exercise by ensuring
 their GitHub accounts and private repositories are setup correctly. Code
 and notes will be shared between group members via a private Git repository. 
 
+
+## Course-Specific Learning Outcomes
+* **LO3.d:** Apply pair-programming principles in a software-based project.
+* **LO5.a:** Utilize a version control tool such as Git or Subversion to store and update source code in a multi-programmer software solution.
+
 ## References and Prerequisites
 
 * [Setting up your own GitHub Account](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md)
