@@ -135,7 +135,7 @@ command depends on your present working directory), then please note that contex
    1. Update the POM so that the project works with Java 8. After that, add and commit the `pom.xml` file to 
       the local repository.
       
-   1. Create blank source code files for the remaining checkpoints:
+   1. Create blank source code files for future checkpoints:
    
       ```
       $ touch src/main/java/cs1302/sorting/BubbleSort.java
