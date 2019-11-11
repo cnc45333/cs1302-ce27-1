@@ -25,13 +25,13 @@ command depends on your present working directory), then please note that contex
    We reccommend keeping the groups small. Some steps in this exercise need be
    done by each group member individually.
    
-1. **Indivually:** Make sure that you have done the following:
+1. **Individually:** Make sure that you have done the following:
 
    1. [Setup your Free GitHub Pro Account](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-an-account)
    
    1. [Setup your SSH Keys on Nike and GitHub](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-ssh-keys)
 
-1. **Individully:** If you haven't already done this in a previous exercise, setup your Git username 
+1. **Individually:** If you haven't already done this in a previous exercise, setup your Git username 
    and email on Nike by modifiying and executing the commands below. 
    When setting the `user.name` property, please provide your name as it appears on eLC and
    Athena. If you have a preferred name, then you may include it in parentheses. For the
@@ -50,7 +50,7 @@ command depends on your present working directory), then please note that contex
    $ git config --global user.email
    ```
    
-1. For this checkpoint, pleas be ready to show the public key that you generated on Nike both on
+1. For this checkpoint, please be ready to show the public key that you generated on Nike both on
    Nike and on your GitHub account.
    
    * To see the copy of your public key on Nike:
