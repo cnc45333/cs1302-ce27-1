@@ -85,6 +85,8 @@ The Git log in your submitted exercise will help us determine if you met these c
    
 ## Exercise Steps
 
+### Checkpoint 1 Steps
+
 1. **In a group?**
 
    * **If yes,** then let's do some **pair programming!** The instructions will refer to Group Member 1 and
@@ -238,6 +240,8 @@ The Git log in your submitted exercise will help us determine if you met these c
 
 <hr/>
 
+### Checkpoint 2 Steps
+
 For this next checkpoint, we will have you implement a simple sorting algorithm called
 [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort). **There are many different ways to
 explain the execution of this algorithm.** We will take the approach of breaking up the
@@ -338,9 +342,11 @@ of the specified range (i.e., from `lo` to `hi`). After a call to `bubble`,
 
 <hr/>
 
-![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
 
 <hr/>
+
+### Checkpoint 3 Steps
 
 **Bubble Sort Algo**: This method also takes an array, two valid index positions `lo` and `hi` (both inclusive) 
 within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions.
@@ -387,7 +393,7 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
    you test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
    Once your group is confident that the code compiles and runs correctly,
    check `checkstyle`, then stage and commit `BubbleSort.java` to your local repository
-   with message `"checkpoint-4"`, then **push the changes** up to GitHub. 
+   with message `"checkpoint-3"`, then **push the changes** up to GitHub. 
 
 1. **GROUP MEMBER 1:** Pull the changes to your local copy of the repository, if needed.
    
@@ -395,9 +401,11 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
 
 <hr/>
 
-![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-4-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
 
 <hr/>
+
+### Checkpoint 4 Steps
 
 1. **GROUP MEMBER 1:** Create a plain text file called `NOTES.md` using the following as a template:
 
@@ -443,7 +451,7 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
 
 1. **GROUP MEMBER 1:** Once your group is confident that the code compiles and runs correctly,
    stage and commit `NOTES.md` to your local repository
-   with message `"checkpoint-5"`, then **push the changes** up to GitHub.
+   with message `"checkpoint-4"`, then **push the changes** up to GitHub.
    
 1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository, if needed.
    
@@ -451,9 +459,11 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
 
 <hr/>
 
-![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-5-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-4-success?style=for-the-badge)
 
 <hr/>
+
+### Submission Steps
 
 **Each student needs to individually submit their own work.**
 
@@ -483,7 +493,7 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
      
 <hr/>
 
-![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
