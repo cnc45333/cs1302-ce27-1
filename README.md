@@ -41,7 +41,10 @@ The Git log in your submitted exercise will help us determine if you met these c
 
 1. To get the most out of this exercise, we encourage you to
    **form a group of exactly two people for this exercise.**
-   When done in a group, some steps in this exercise need be done by each group member individually.
+   
+   * When done in a group, some steps in this exercise need be done by each group member individually.
+   
+   * Working by yourself? That's okay. If the instructions ask you to switch, then don't switch.
    
 1. **Individually:** Make sure that you have done the following:
 
