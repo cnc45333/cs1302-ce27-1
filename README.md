@@ -26,6 +26,17 @@ logged into the Nike server.
 command that you typed to make the related action happen. If context is necessary (e.g., the 
 command depends on your present working directory), then please note that context as well.
 
+![Extra Credit](ecop.png)
+
+We will **double the points** that you earn for this exercise if you meet the following criteria:
+
+1. Met with another student in the Spring 2020 CSCI 1302 online (e.g., via Zoom) to complete
+   the pair programming aspects of this exercise; and
+   
+1. Completed all checkpoints.
+
+The Git log in your submitted exercise will help us determine if you met these criteria.
+
 ## Exercise Steps
 
 1. **You need to be in a group with at least two people for this exercise.**
