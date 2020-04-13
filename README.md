@@ -1,4 +1,4 @@
-# cs1302-ce27 Preparing for Paired Programming
+# cs1302-ce27 Paired Sorting Algorithm Analysis
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
 <!--![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
@@ -8,14 +8,17 @@ In this class exercise, students will prepare for the next exercise by ensuring
 their GitHub accounts and private repositories are setup correctly. Code
 and notes will be shared between group members via a private Git repository. 
 
-
 ## Course-Specific Learning Outcomes
 * **LO3.d:** Apply pair-programming principles in a software-based project.
-* **LO5.a:** Utilize a version control tool such as Git or Subversion to store and update source code in a multi-programmer software solution.
+* **LO5.a:** Utilize a version control tool such as Git or Subversion to store and update source 
+code in a multi-programmer software solution.
+* **LO6.c:** (Partial) Implement, analyze, and assess combinations of searching/sorting 
+algorithms such as linear search, binary search, quadratic sorts, and linearithmic sorts.
 
 ## References and Prerequisites
 
 * [Setting up your own GitHub Account](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md)
+* [CSCI 1302 Algorithm Analysis Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/algo-analysis.md)
 
 ## Questions
 
@@ -80,7 +83,7 @@ The Git log in your submitted exercise will help us determine if you met these c
      ```
    * To see the copy of your public key on GitHub, please visit: https://github.com/settings/keys
    
-**CHECKPOINT**
+![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)
 
 <hr/>
 
@@ -240,7 +243,202 @@ The Git log in your submitted exercise will help us determine if you met these c
    $ git config --global alias.adog "log --all --decorate --oneline --graph"
    ```
 
-**CHECKPOINT**
+![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
+
+For this next checkpoint, we will have you implement a simple sorting algorithm called
+[Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort). **There are many different ways to
+explain the execution of this algorithm.** We will take the approach of breaking up the
+algorithm into two methods, `bubble` and `bubbleSort` that work together to sort an array.
+
+**Bubble Algo:** This is a helper algorithm that does not, itself, sort the array. 
+This method takes an array, two valid index positions `lo` and `hi` (both inclusive) 
+within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions. 
+The method iterates over the array from `lo` to `hi - 1` (inclusive) and **swaps adjacent elements**
+that are **not in order** according to the ordering induced by the comparator (i.e., calling 
+`c.compare`). Here is the signature for the method:
+   
+   ```java
+   public static <T> void bubble(T[] array, int lo, int hi, Comparator<T> c)
+   ```
+   
+   1. Here is an example of before and after calling `bubble(array, 0, 4, Integer::compareTo)`
+      on an array with elements `[ 2, 3, 1, 4, 5 ]`:
+      
+      ```java
+      System.out.println(Arrays.toString(array)); // [ 2, 3, 1, 4, 5 ]
+      bubble(array, 0, 4, Integer::compareTo);
+      System.out.println(Arrays.toString(array)); // [ 2, 1, 3, 4, 5 ]
+      ```
+      
+      Here are is an overview of the internal steps taken in this example:
+      
+      | `lo` | `hi` | `hi - 1` |
+      |------|------|----------|
+      | `0`  | `4`  | `3`      |
+      
+      | Iteration | Before              | `(a, b)` | `c.compare(a, b) > 0` | Action  | After               |
+      |-----------|---------------------|----------|-----------------------|---------|---------------------|
+      | `0`       | `[(2, 3) 1, 4, 5 ]` | `(2, 3)` | `false`               | no swap | `[ 2, 3, 1, 4, 5 ]` |
+      | `1`       | `[ 2 (3, 1) 4, 5 ]` | `(2, 1)` | `true`                | do swap | `[ 2, 1, 3, 4, 5 ]` |
+      | `2`       | `[ 2, 1 (3, 4) 5 ]` | `(3, 4)` | `false`               | no swap | `[ 2, 1, 3, 4, 5 ]` |
+      | `3`       | `[ 2, 1, 3 (4, 5)]` | `(4, 5)` | `false`               | no swap | `[ 2, 1, 3, 4, 5 ]` |
+      
+   1. Here is another example before and after calling `bubble(array, 0, 4, Integer::compareTo)`
+      on an array with elements `[ 3, 2, 1, 5, 4 ]` :
+      
+      ```java
+      System.out.println(Arrays.toString(array)); // [ 3, 2, 1, 5, 4 ]
+      bubble(array, 0, 4, Integer::compareTo);
+      System.out.println(Arrays.toString(array)); // [ 2, 1, 3, 4, 5 ]
+      ```
+      
+      Here are is an overview of the internal steps taken in this example:
+      
+      | `lo` | `hi` | `hi - 1` |
+      |------|------|----------|
+      | `0`  | `4`  | `3`      |
+      
+      | Iteration | Before              | `(a, b)` | `c.compare(a, b) > 0` | Action  | After               |
+      |-----------|---------------------|----------|-----------------------|---------|---------------------|
+      | `0`       | `[(3, 2) 1, 5, 4 ]` | `(3, 2)` | `true`                | do swap | `[ 2, 3, 1, 5, 4 ]` |
+      | `1`       | `[ 2 (3, 1) 5, 4 ]` | `(3, 1)` | `true`                | do swap | `[ 2, 1, 3, 5, 4 ]` |
+      | `2`       | `[ 2, 1 (3, 5) 4 ]` | `(3, 5)` | `false`               | no swap | `[ 2, 1, 3, 5, 4 ]` |
+      | `3`       | `[ 2, 1, 3 (5, 4)]` | `(5, 4)` | `true`                | do swap | `[ 2, 1, 3, 4, 5 ]` |
+      
+   1. Here is another example before and after calling `bubble(array, 0, 1, Integer::compareTo)`
+      on an array with elements `[ 2, 1, 3, 4, 5 ]` :
+      
+      ```java
+      System.out.println(Arrays.toString(array)); // [ 2, 1, 3, 4, 5 ]
+      bubble(array, 0, 1, Integer::compareTo);
+      System.out.println(Arrays.toString(array)); // [ 1, 2, 3, 4, 5 ]
+      ```
+      
+      Here are is an overview of the internal steps taken in this example:
+      
+      | `lo` | `hi` | `hi - 1` |
+      |------|------|----------|
+      | `0`  | `1`  | `0`      |
+      
+      | Iteration | Before              | `(a, b)` | `c.compare(a, b) > 0` | Action  | After               |
+      |-----------|---------------------|----------|-----------------------|---------|---------------------|
+      | `0`       | `[(2, 1) 3, 4, 5 ]` | `(2, 1)` | `true`                | do swap | `[ 1, 2, 3, 4, 5 ]` |
+   
+This method gets its name from the idea that a call "bubbles" the bigger values to the right
+of the specified range (i.e., from `lo` to `hi`). After a call to `bubble`, 
+**the largest value in the range is guaranteed to be at index `hi`.**
+
+1. As a group, pick a **DRIVER.**, then the have the **DRIVER** implement the `bubble` method
+   in `BubbleSort.java`. You may want to implement a static `swap` method to help you perform
+   the adjacent swaps. 
+   
+1. Write some code in the `main` method to test the implementation of `bubble`. Make sure you
+   test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
+   Once your group is confident that the code compiles and runs correctly,
+   have the **DRIVER** stage and commit `BubbleSort.java` to their local repository, then
+   push the changes up to the repository on GitHub. Everyone else should pull the changes
+   after that.
+   
+1. View the condensed, graphical version of your Git log using `git adog`.
+
+![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
+
+**Bubble Sort Algo**: This method also takes an array, two valid index positions `lo` and `hi` (both inclusive) 
+within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions.
+The method simply calls `bubble(array, 0, hi)` for all valid `hi` values **in reverse order**
+except for `0`. Here is the signature for the method:
+
+   ```java
+   public static <T> void bubbleSort(T[] array, int lo, int hi, Comparator<T> c)
+   ```
+
+To sort an entire array of integers referred to by `array`, for example, you might call:
+   
+   ```java
+   bubbleSort(array, 0, array.length - 1, Integer::compareTo);
+   ```
+   
+This method gets its name from the fact that uses repeated calls `bubble` in order to sort the array. 
+Visually, the algorithm works by breaking up the array into two subsequences: unsorted and sorted.
+Initially, the unsorted sequence is the entire array and the sorted sequence is empty. After each
+call to `bubble`, we know that the largest value in the range is guaranteed to be at index `hi`.
+   
+   1. Here is a trace of the algorithm, one row for each call to `bubble`:
+   
+      | Before              | Call                      | After (Unsorted `/` Sorted) |
+      |---------------------|---------------------------|-----------------------------|
+      | `[ 5, 4, 2, 3, 1 ]` | `bubble(array, 0, 4, c);` | `[ 4, 2, 3, 1/ 5 ]`         |  
+      | `[ 4, 2, 3, 1, 5 ]` | `bubble(array, 0, 3, c);` | `[ 2, 3, 1/ 4, 5 ]`         |
+      | `[ 2, 3, 1, 4, 5 ]` | `bubble(array, 0, 2, c);` | `[ 2, 1/ 3, 4, 5 ]`         |
+      | `[ 2, 1, 3, 4, 5 ]` | `bubble(array, 0, 1, c);` | `[ 1/ 2, 3, 4, 5 ]`         |
+      
+   1. Here is an example before and after calling `bubbleSort(array, 0, 4, Integer::compareTo)`
+      on an array with elements `[ 5, 4, 2, 3, 1 ]`:
+      
+      ```java
+      System.out.println(Arrays.toString(array)); // [ 5, 4, 2, 3, 1 ]
+      bubbleSort(array, 0, 4, Integer::compareTo);
+      System.out.println(Arrays.toString(array)); // [ 1, 2, 3, 4, 5 ]
+      ```
+1. As a group, pick a _new_ **DRIVER.**, then the have the **DRIVER** implement the `bubbleSort` 
+   method in `BubbleSort.java`. 
+   
+1. Write some code in the `main` method to test the implementation of `bubbleSort`. You can
+   most likely use your `bubble` tests - just change them to do a full `bubbleSort`. Make sure 
+   you test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
+   Once your group is confident that the code compiles and runs correctly,
+   have the **DRIVER** stage and commit `BubbleSort.java` to their local repository, then
+   push the changes up to the repository on GitHub. Everyone else should pull the changes
+   after that.
+   
+1. View the condensed, graphical version of your Git log using `git adog`.
+
+![CP](https://img.shields.io/badge/Checkpoint-4-success?style=for-the-badge)
+
+1. In your notes, write down the source code for `bubble` and `bubbleSort`, then derive the
+   timing functions for two different algorithm analyses of the **Bubble Sort Algo**. Here,
+   let the problem size be defined as `n = hi - lo + 1`. 
+   
+   1. What is `T(n)` for a call to `bubbleSort` if the set of key processing steps includes
+      only swap operations? Include the diagram for your derivation. As `bubbleSort` calls
+      `bubble`, this will involve mathematical function composition.
+      
+   1. What is `T(n)` for a call to `bubbleSort` if the set of key processing steps includes
+      only comparison operations (i.e., calls to `c.compare`)? Include the diagram
+      for your derivation. As `bubbleSort` calls `bubble`, this will involve mathematical 
+      function composition.
+
+![CP](https://img.shields.io/badge/Checkpoint-5-success?style=for-the-badge)
+
+**Each student needs to individually submit their own work.**
+
+1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
+   directory with the following information:
+
+   1. Your name and UGA ID number;
+   1. Collaborator names, if any; and
+   1. The weekly code (listed with the exercise on eLC).
+   
+   Here is an example:
+   
+   ```
+   1. Sally Smith (811-000-999)
+   2. Collaborators: Joe Allen, Stacie Mack
+   3. Weekly Code: replace-with-actual-code
+   ```
+
+1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
+   passes the `checkstyle` audit, then stage and commit all changes, if needed.
+
+1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
+   
+   ```
+   $ submit cs1302-ce25 cs1302a
+   ```
+   
+![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
+
+<hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
 
