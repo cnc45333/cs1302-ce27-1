@@ -44,7 +44,7 @@ The Git log in your submitted exercise will help us determine if you met these c
    
    * When done in a group, some steps in this exercise need be done by each group member individually.
    
-   * Working by yourself? That's okay. If the instructions ask you to switch, then don't switch.
+   * **Working by yourself?** That's okay. If the instructions ask you to switch, then don't switch.
    
 1. **Individually:** Make sure that you have done the following:
 
