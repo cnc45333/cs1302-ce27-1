@@ -39,9 +39,9 @@ The Git log in your submitted exercise will help us determine if you met these c
 
 ## Exercise Steps
 
-1. **You need to be in a group with at least two people for this exercise.**
-   We reccommend keeping the groups small. Some steps in this exercise need be
-   done by each group member individually.
+1. To get the most out of this exercise, we encourage you to
+   **form a group of exactly two people for this exercise.**
+   When done in a group, some steps in this exercise need be done by each group member individually.
    
 1. **Individually:** Make sure that you have done the following:
 
