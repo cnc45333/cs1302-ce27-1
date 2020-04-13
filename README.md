@@ -234,7 +234,7 @@ The Git log in your submitted exercise will help us determine if you met these c
 
 <hr/>
 
-![CP](https://img.shields.io/badge/Just+Finished+Checkpoint-1-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
 
 <hr/>
 
@@ -321,20 +321,26 @@ This method gets its name from the idea that a call "bubbles" the bigger values 
 of the specified range (i.e., from `lo` to `hi`). After a call to `bubble`, 
 **the largest value in the range is guaranteed to be at index `hi`.**
 
-1. As a group, pick a **DRIVER.**, then the have the **DRIVER** implement the `bubble` method
+1. **GROUP MEMBER 1:** Implement the `bubble` method
    in `BubbleSort.java`. You may want to implement a static `swap` method to help you perform
    the adjacent swaps. 
    
-1. Write some code in the `main` method to test the implementation of `bubble`. Make sure you
+1. **GROUP MEMBER 1:** Write some code in the `main` method to test the implementation of `bubble`.
+   Make sure you
    test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
    Once your group is confident that the code compiles and runs correctly,
-   have the **DRIVER** stage and commit `BubbleSort.java` to their local repository, then
-   push the changes up to the repository on GitHub. Everyone else should pull the changes
-   after that.
-   
-1. View the condensed, graphical version of your Git log using `git adog`.
+   check `checkstyle`, then stage and commit `BubbleSort.java` to your local repository
+   with message `"checkpoint-2"`, then **push the changes** up to GitHub. 
 
-![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
+1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository, if needed.
+   
+1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+
+<hr/>
 
 **Bubble Sort Algo**: This method also takes an array, two valid index positions `lo` and `hi` (both inclusive) 
 within the array such that `lo <= hi` and a `Comparator` that is used to perform comparisions.
@@ -373,37 +379,79 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
       bubbleSort(array, 0, 4, Integer::compareTo);
       System.out.println(Arrays.toString(array)); // [ 1, 2, 3, 4, 5 ]
       ```
-1. As a group, pick a _new_ **DRIVER.**, then the have the **DRIVER** implement the `bubbleSort` 
+1. **GROUP MEMBER 2:** Implement the `bubbleSort` 
    method in `BubbleSort.java`. 
    
-1. Write some code in the `main` method to test the implementation of `bubbleSort`. You can
+1. **GROUP MEMBER 2:** Write some code in the `main` method to test the implementation of `bubbleSort`. You can
    most likely use your `bubble` tests - just change them to do a full `bubbleSort`. Make sure 
    you test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
    Once your group is confident that the code compiles and runs correctly,
-   have the **DRIVER** stage and commit `BubbleSort.java` to their local repository, then
-   push the changes up to the repository on GitHub. Everyone else should pull the changes
-   after that.
-   
-1. View the condensed, graphical version of your Git log using `git adog`.
+   check `checkstyle`, then stage and commit `BubbleSort.java` to your local repository
+   with message `"checkpoint-4"`, then **push the changes** up to GitHub. 
 
-![CP](https://img.shields.io/badge/Checkpoint-4-success?style=for-the-badge)
+1. **GROUP MEMBER 1:** Pull the changes to your local copy of the repository, if needed.
+   
+1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
 
 <hr/>
 
-1. In your notes, write down the source code for `bubble` and `bubbleSort`, then derive the
-   timing functions for two different algorithm analyses of the **Bubble Sort Algo**. Here,
-   let the problem size be defined as `n = hi - lo + 1`. 
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-4-success?style=for-the-badge)
+
+<hr/>
+
+1. **GROUP MEMBER 1:** Create a plain text file called `NOTES.md` using the following as a template:
+
+   ````
+   # Notes
    
-   1. What is `T(n)` for a call to `bubbleSort` if the set of key processing steps includes
-      only swap operations? Include the diagram for your derivation. As `bubbleSort` calls
-      `bubble`, this will involve mathematical function composition.
+   ## Bubble Sort Algo
+   
+   ```java
+   void bubble(array, lo, hi, c) {
+       // REMEMBER, n = hi - lo + 1
+       // REPLACE: WITH INSIDE OF YOUR bubble METHOD
+   } // bubble
+   ```
+   
+   ```java
+   void bubbleSort(array, lo, hi, c)
+       // REMEMBER, n = hi - lo + 1
+       // REPLACE: WITH INSIDE OF YOUR bubbleSort METHOD
+   } // bubble
+   ```
+   ````
+   
+   In this file, replace the comments labeled `REPLACE` with the bodies of your `bubble` and `bubbleSort`
+   methods.
+   
+   * In Emacs? Use `C-x 3` to open a second buffer, `C-x o` to move to the other buffer, then
+     `C-x f` to find/open the relevant `.java` file. Select and copy text as usual, then use
+     `C-x o` to move back to the first buffer to paste.
+   
+   In this file, derive timing functions for two different algorithm analyses of the **Bubble Sort Algo**. 
+   Here, let the problem size be defined as `n = hi - lo + 1`. Use the following as a guide
+   
+   1. What is `T(n)` for a direct call to `bubble` if the set of key processing steps includes
+      only comparison operations (i.e., calls to `c.compare`)? Include the diagram
+      for your derivation as comments in your code, similar to what is show in the required readings. 
       
    1. What is `T(n)` for a call to `bubbleSort` if the set of key processing steps includes
       only comparison operations (i.e., calls to `c.compare`)? Include the diagram
-      for your derivation. As `bubbleSort` calls `bubble`, this will involve mathematical 
-      function composition.
+      for your derivation as comments in your code snippet, similar to what is show in the 
+      required readings. As `bubbleSort` calls `bubble`, this will involve mathematical 
+      function composition. 
 
-![CP](https://img.shields.io/badge/Checkpoint-5-success?style=for-the-badge)
+1. **GROUP MEMBER 1:** Once your group is confident that the code compiles and runs correctly,
+   stage and commit `NOTES.md` to your local repository
+   with message `"checkpoint-5"`, then **push the changes** up to GitHub.
+   
+1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository, if needed.
+   
+1. **EVERYONE:** Look at the `NOTES.md` file on GitHub.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-5-success?style=for-the-badge)
 
 <hr/>
 
@@ -432,7 +480,9 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
    ```
    $ submit cs1302-ce25 cs1302a
    ```
-   
+     
+<hr/>
+
 ![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
 
 <hr/>
