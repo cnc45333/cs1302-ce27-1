@@ -40,7 +40,7 @@ We will **double the points** that you earn for this exercise if you meet the fo
 
 The Git log in your submitted exercise will help us determine if you met these criteria.
 
-## Exercise Steps
+## Getting Started
 
 1. To get the most out of this exercise, we encourage you to
    **form a group of exactly two people for this exercise.**
@@ -83,13 +83,22 @@ The Git log in your submitted exercise will help us determine if you met these c
      ```
    * To see the copy of your public key on GitHub, please visit: https://github.com/settings/keys
    
-![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)
+## Exercise Steps
 
-<hr/>
+1. **In a group?**
 
-1. **Pick an ordering for the group members** (e.g., Group Member 1, Group Member 2, etc.).
-   If a step is being performed by one group member, then everyone is expected
-   to watch, pay attention, and take notes.
+   * **If yes,** then let's do some **pair programming!** The instructions will refer to Group Member 1 and
+     Group Member 2. That means you need to pick an ordering. We recommend that use Comte de Rochambeau's 
+     technique to determine who gets to be the driver first, i.e., who gets to be Group Member 1.
+   
+     > Comte de Rochambeau was a French nobleman who fought against the British during the Revolutionary War.
+     > His name served as a codeword at the battle of Yorktown, where he commanded the French troops.
+     > Legend has it that Comte de Rochambeau made decisions using a technique known as _roshambo_
+     > or _rock, paper, scissors_. 
+     > **-- A Legend told by Some Old, Wise Person**
+     
+   * **If no,** then you will need to follow the instructions for both Group Member 1 and Group Member 2
+     in the instructions below. 
 
 1. **GROUP MEMBER 1:** Create a [new repository](https://github.com/new) on GitHub with 
    the following information:
@@ -110,21 +119,29 @@ The Git log in your submitted exercise will help us determine if you met these c
    
    Do **NOT** follow any of the setup instructions at this time.
    
-1. **GROUP MEMBER 1:** On the repository's website, add your group members as collaborators
-   by going to "Settings" → "Collaborators". This will send them an invite that they can
-   accept either via email or by visiting the repository's website on GitHub.
+1. **If in a group:** 
+
+   1. **GROUP MEMBER 1:** On the repository's website, add your group members as collaborators
+      by going to "Settings" → "Collaborators". This will send them an invite that they can
+      accept either via email or by visiting the repository's website on GitHub.
    
-1. **OTHER GROUP MEMBERS:** Go to the repository website on GitHub and accept the invition
-   from Group Member 1. If you see a 404 error instead of an invitation, then double check
-   the following:
+   1. **OTHER GROUP MEMBERS:** Go to the repository website on GitHub and accept the invition
+      from Group Member 1. If you see a 404 error instead of an invitation, then double check
+      the following:
    
-   * Repository Website URL
+      * Repository Website URL
    
-   * Username that Group Member 1 used when they added you
+      * Username that Group Member 1 used when they added you
    
-   Before continuing, make sure each group member has access to the repository website.
+      Before continuing, make sure each group member has access to the repository website.
   
-1. **GROUP MEMBER 2:** On Nike, use Maven to create a project directory for this exercise 
+1. **In a group?** 
+
+   * **If yes,** then the following instructions should be performed by **GROUP MEMBER 2**.
+   
+   * **If no,** then the following instructions should be performed by **YOU**.
+   
+   On Nike, use Maven to create a project directory for this exercise 
    called `cs1302-ce27-ce28` with a primary package called `cs1302.sorting`, then change
    into that directory and do the following:
    
