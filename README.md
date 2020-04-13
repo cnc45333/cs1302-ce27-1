@@ -232,7 +232,9 @@ The Git log in your submitted exercise will help us determine if you met these c
 
 1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
 
-![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just+Finished+Checkpoint-1-success?style=for-the-badge)
 
 <hr/>
 
