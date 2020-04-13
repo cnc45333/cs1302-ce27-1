@@ -245,6 +245,8 @@ The Git log in your submitted exercise will help us determine if you met these c
 
 ![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
 
+<hr/>
+
 For this next checkpoint, we will have you implement a simple sorting algorithm called
 [Bubble Sort](https://en.wikipedia.org/wiki/Bubble_sort). **There are many different ways to
 explain the execution of this algorithm.** We will take the approach of breaking up the
@@ -395,6 +397,8 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
 
 ![CP](https://img.shields.io/badge/Checkpoint-4-success?style=for-the-badge)
 
+<hr/>
+
 1. In your notes, write down the source code for `bubble` and `bubbleSort`, then derive the
    timing functions for two different algorithm analyses of the **Bubble Sort Algo**. Here,
    let the problem size be defined as `n = hi - lo + 1`. 
@@ -409,6 +413,8 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
       function composition.
 
 ![CP](https://img.shields.io/badge/Checkpoint-5-success?style=for-the-badge)
+
+<hr/>
 
 **Each student needs to individually submit their own work.**
 
