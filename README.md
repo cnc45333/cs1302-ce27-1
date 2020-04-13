@@ -119,13 +119,13 @@ The Git log in your submitted exercise will help us determine if you met these c
    
    Do **NOT** follow any of the setup instructions at this time.
    
-1. **If in a group:** 
+1. **If not in a group,** skip to the next step; otherwise, perform the sub-steps below.   
 
    1. **GROUP MEMBER 1:** On the repository's website, add your group members as collaborators
       by going to "Settings" → "Collaborators". This will send them an invite that they can
       accept either via email or by visiting the repository's website on GitHub.
    
-   1. **OTHER GROUP MEMBERS:** Go to the repository website on GitHub and accept the invition
+   1. **GROUP MEMBER 2:** Go to the repository website on GitHub and accept the invition
       from Group Member 1. If you see a 404 error instead of an invitation, then double check
       the following:
    
@@ -135,13 +135,7 @@ The Git log in your submitted exercise will help us determine if you met these c
    
       Before continuing, make sure each group member has access to the repository website.
   
-1. **In a group?** 
-
-   * **If yes,** then the following instructions should be performed by **GROUP MEMBER 2**.
-   
-   * **If no,** then the following instructions should be performed by **YOU**.
-   
-   On Nike, use Maven to create a project directory for this exercise 
+1. **GROUP MEMBER 2:** On Nike, use Maven to create a project directory for this exercise 
    called `cs1302-ce27-ce28` with a primary package called `cs1302.sorting`, then change
    into that directory and do the following:
    
@@ -185,7 +179,7 @@ The Git log in your submitted exercise will help us determine if you met these c
 
       Add and commit `src` to the local repository.
 
-   1. Before proceeding, ensure that all tracked files are committed. 
+   1. Before proceeding, ensure that all tracked files pass `checkstyle` and are committed. 
 
    1. Visit the repository website on GitHub and copy the "SSH" URL (i.e., the `git@github...` URL)
       under "Quick setup", then follow these instructions on Nike to link your local repository 
