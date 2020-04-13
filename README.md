@@ -192,32 +192,15 @@ The Git log in your submitted exercise will help us determine if you met these c
       
       If successful, everyone should now be able to see the exercise files on the
       repository website on GitHub!
-
-1. **OTHER GROUP MEMBERS:** Visit the repository website on GitHub and copy the "SSH"
-   URL from the green "Clone or download" button, then these instructions on Nike to 
-   clone the GitHub-hosted Git repostory on your Nike account:
    
-   ```
-   $ git clone git@github.com:group_member_one/cs1302-ce27-ce28.git
-   ```
-   
-   Change into the directory and confirm that everything is there! You can verify that
-   the origin of the `clone` operation is the repository instance on GitHub by
-   using the following command:
-   
-   ```
-   $ git remote -v
-   ```
-   
-1. **NEXT GROUP MEMBER:** On Nike, write out the basic skeleton code for a driver class
-   in `BubbleSort.java` (you don't need to implement it now; we'll write the algorithm 
+1. **GROUP MEMBER 1:** On Nike, write out the basic skeleton code for a driver class
+   in `BubbleSort.java` (**you do NOT need to implement it now**; we'll write the algorithm 
    in there later), ensuring that the  package statement is correct and the file compiles 
-   and runs using Maven. Then, stage and commit the change to your local repository.
+   and runs using Maven. Then, check `checkstyle`, stage, and commit the change to your local repository.
    
-   Everyone should notice that although you comitted this to your local copy of the
-   repository, the change is not automatically refelected in the other local copies
-   nor the copy hosted on GitHub. To send this change to GitHub, use the following 
-   command to push:
+   **Please take note:** Although you comitted this to your local copy of the
+   repository, the change is not automatically refelected in the  the copy hosted on GitHub. 
+   To send this change to GitHub, use the following command to push:
    
    ```
    $ git push origin master
@@ -225,9 +208,9 @@ The Git log in your submitted exercise will help us determine if you met these c
    
    If successful, everyone should now be able to see the updated exercise files on the
    repository website on GitHub! However, 
-   **they will not see the change reflected in their local copy.** 
+   **if you're in a group, then GROUP MEMBER 2 will not see the change reflected in their local copy.** 
 
-1. **OTHER GROUP MEMBERS:** Update your local copy of the repository with the latest
+1. **GROUP MEMBER 2:** Update your local copy of the repository with the latest
    changes from the repository hosed on GitHub using the following command:
    
    ```
@@ -237,22 +220,17 @@ The Git log in your submitted exercise will help us determine if you met these c
    If successful, everyone should now be able to see the updated exercise files in
    their local copies!
 
-1. **NEXT GROUP MEMBER:** On Nike, write out the basic skeleton code for a driver class
+1. **GROUP MEMBER 2:** On Nike, write out the basic skeleton code for a driver class
    in `SelectionSort.java` (we'll write the algorithm in there later), ensuring that the 
-   package statement is correct and the file compiles and runs using Maven. Then, stage
-   and commit the change to your local repository **and push those changes to GitHub**.
+   package statement is correct and the file compiles and runs using Maven. Then, check 
+   `checkstyle`, stage, and and commit the change to your local repository 
+   **and push those changes to GitHub**.
    
-1. **OTHER GROUP MEMBERS:** Update your local copy of the repository with the latest
-   changes from the repository hosed on GitHub. If successful, everyone should now be 
+1. **GROUP MEMBER 1:** Update your local copy of the repository with the latest
+   changes from the repository hosted on GitHub. If successful, everyone should now be 
    able to see the updated exercise files in their local copies! Furthermore    
 
 1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
-   If you do not have `git adog` alias setup, then enable it using the following
-   caommand:
-   
-   ```
-   $ git config --global alias.adog "log --all --decorate --oneline --graph"
-   ```
 
 ![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
 
