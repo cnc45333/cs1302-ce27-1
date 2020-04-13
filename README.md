@@ -223,8 +223,8 @@ The Git log in your submitted exercise will help us determine if you met these c
 1. **GROUP MEMBER 2:** On Nike, write out the basic skeleton code for a driver class
    in `SelectionSort.java` (we'll write the algorithm in there later), ensuring that the 
    package statement is correct and the file compiles and runs using Maven. Then, check 
-   `checkstyle`, stage, and and commit the change to your local repository 
-   **and push those changes to GitHub**.
+   `checkstyle`, stage, and and commit the change to your local repository with
+   message **`"checkpoint-1"`**, then **push those changes to GitHub**.
    
 1. **GROUP MEMBER 1:** Update your local copy of the repository with the latest
    changes from the repository hosted on GitHub. If successful, everyone should now be 
