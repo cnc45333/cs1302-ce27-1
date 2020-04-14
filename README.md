@@ -488,7 +488,7 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
 1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
    
    ```
-   $ submit cs1302-ce25 cs1302a
+   $ submit cs1302-ce27 cs1302a
    ```
      
 <hr/>
