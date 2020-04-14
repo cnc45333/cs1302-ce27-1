@@ -336,7 +336,7 @@ of the specified range (i.e., from `lo` to `hi`). After a call to `bubble`,
    test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
    Once your group is confident that the code compiles and runs correctly,
    check `checkstyle`, then stage and commit `BubbleSort.java` to your local repository
-   with message `"checkpoint-2"`, then **push the changes** up to GitHub. 
+   with tag `"checkpoint-2"`, then **push the changes** up to GitHub. 
 
 1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository, if needed.
    
@@ -387,15 +387,14 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
       bubbleSort(array, 0, 4, Integer::compareTo);
       System.out.println(Arrays.toString(array)); // [ 1, 2, 3, 4, 5 ]
       ```
-1. **GROUP MEMBER 2:** Implement the `bubbleSort` 
-   method in `BubbleSort.java`. 
+1. **GROUP MEMBER 2:** Implement the `bubbleSort` method in `BubbleSort.java`. 
    
 1. **GROUP MEMBER 2:** Write some code in the `main` method to test the implementation of `bubbleSort`. You can
    most likely use your `bubble` tests - just change them to do a full `bubbleSort`. Make sure 
    you test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
    Once your group is confident that the code compiles and runs correctly,
    check `checkstyle`, then stage and commit `BubbleSort.java` to your local repository
-   with message `"checkpoint-3"`, then **push the changes** up to GitHub. 
+   with tag `"checkpoint-3"`, then **push the changes** up to GitHub. 
 
 1. **GROUP MEMBER 1:** Pull the changes to your local copy of the repository, if needed.
    
@@ -439,7 +438,7 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
      `C-x o` to move back to the first buffer to paste.
    
    In this file, derive timing functions for two different algorithm analyses of the **Bubble Sort Algo**. 
-   Here, let the problem size be defined as `n = hi - lo + 1`. Use the following as a guide
+   Here, let the problem size be defined as `n = hi - lo + 1`. Use the following as a guide:
    
    1. What is `T(n)` for a direct call to `bubble` if the set of key processing steps includes
       only comparison operations (i.e., calls to `c.compare`)? Include the diagram
@@ -451,9 +450,9 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
       required readings. As `bubbleSort` calls `bubble`, this will involve mathematical 
       function composition. 
 
-1. **GROUP MEMBER 1:** Once your group is confident that the code compiles and runs correctly,
+1. **GROUP MEMBER 1:** Once your group confident that your analysis is correct,
    stage and commit `NOTES.md` to your local repository
-   with message `"checkpoint-4"`, then **push the changes** up to GitHub.
+   with tag `"checkpoint-4"`, then **push the changes** up to GitHub.
    
 1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository, if needed.
    
