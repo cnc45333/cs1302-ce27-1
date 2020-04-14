@@ -438,9 +438,11 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
      `C-x o` to move back to the first buffer to paste.
    
    In this file, derive timing functions for two different algorithm analyses of the **Bubble Sort Algo**. 
-   Here, let the problem size be defined as `n = hi - lo + 1`. Use the following as a guide:
+   Here, let the problem size be defined as `n = hi - lo + 1`. This is very similar to the
+   function composition example from the reading, which you can see 
+   [here](https://github.com/cs1302uga/cs1302-tutorials/blob/master/algo-analysis.md#composition).
    
-   1. What is `T(n)` for a direct call to `bubble` if the set of key processing steps includes
+   1. What is `U(n)` for a direct call to `bubble` if the set of key processing steps includes
       only comparison operations (i.e., calls to `c.compare`)? Include the diagram
       for your derivation as comments in your code, similar to what is show in the required readings. 
       
