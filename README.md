@@ -46,6 +46,8 @@ The Git log in your submitted exercise will help us determine if you met these c
    **form a group of exactly two people for this exercise.**
    
    * **Working in a group?** Some steps in this exercise need be done by each group member individually.
+   If a step is being performed by one group member, then everyone is expected
+   to watch, pay attention, and take notes.
    
    * **Working by yourself?** That's okay. If the instructions ask you to switch, then don't switch.
    
