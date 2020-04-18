@@ -260,7 +260,7 @@ that are **not in order** according to the ordering induced by the comparator (i
    public static <T> void bubble(T[] array, int lo, int hi, Comparator<T> c)
    ```
    
-   1. Here is an example of before and after calling `bubble(array, 0, 4, Integer::compareTo)`
+   *  Here is an example of before and after calling `bubble(array, 0, 4, Integer::compareTo)`
       on an array with elements `[ 2, 3, 1, 4, 5 ]`:
       
       ```java
@@ -282,7 +282,7 @@ that are **not in order** according to the ordering induced by the comparator (i
       | `2`       | `[ 2, 1 (3, 4) 5 ]` | `(3, 4)` | `false`               | no swap | `[ 2, 1, 3, 4, 5 ]` |
       | `3`       | `[ 2, 1, 3 (4, 5)]` | `(4, 5)` | `false`               | no swap | `[ 2, 1, 3, 4, 5 ]` |
       
-   1. Here is another example before and after calling `bubble(array, 0, 4, Integer::compareTo)`
+   *  Here is another example before and after calling `bubble(array, 0, 4, Integer::compareTo)`
       on an array with elements `[ 3, 2, 1, 5, 4 ]` :
       
       ```java
@@ -304,7 +304,7 @@ that are **not in order** according to the ordering induced by the comparator (i
       | `2`       | `[ 2, 1 (3, 5) 4 ]` | `(3, 5)` | `false`               | no swap | `[ 2, 1, 3, 5, 4 ]` |
       | `3`       | `[ 2, 1, 3 (5, 4)]` | `(5, 4)` | `true`                | do swap | `[ 2, 1, 3, 4, 5 ]` |
       
-   1. Here is another example before and after calling `bubble(array, 0, 1, Integer::compareTo)`
+   *  Here is another example before and after calling `bubble(array, 0, 1, Integer::compareTo)`
       on an array with elements `[ 2, 1, 3, 4, 5 ]` :
       
       ```java
