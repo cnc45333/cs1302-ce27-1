@@ -107,21 +107,21 @@ The Git log in your submitted exercise will help us determine if you met these c
 1. **GROUP MEMBER 1:** Create a [new repository](https://github.com/new) on GitHub with 
    the following information:
    
+   Do **NOT** "Initialize this repository with a README". 
+   Also, do **NOT** click on the dropdowns for a `.gitignore` or license file.
+   
    | **Field**            | **Value**                                                        |
    |----------------------|------------------------------------------------------------------|
    | **Owner**            | _your account_                                                   |
-   | **Repository Name**  | `cs1302-ce27-ce28`                                                    |
-   | **Description**      | `Repository for Class Exercise 27 and 28`                               |
+   | **Repository Name**  | `cs1302-ce27-ce28`                                               |
+   | **Description**      | `Repository for Class Exercise 27 and 28`                        |
    | **Public / Private** | Private -- You choose who can see and commit to this repository. |
-   
-   Do **NOT** "Initialize this repository with a README". 
-   Also, do **NOT** click on the dropdowns for a `.gitignore` or license file.
    
    Once complete, you should have a GitHub-hosted private Git repository at the following
    website URL: `https://github.com/your_username/cs1302-ce27-ce28` where `your_username` is
    your GitHub account username. 
    
-   Do **NOT** follow any of the setup instructions at this time.
+   Do **NOT** follow any of the setup instructions given on GitHub at this time.
    
 1. **If not in a group,** skip to the next step; otherwise, perform the sub-steps below.   
 
