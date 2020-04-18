@@ -331,14 +331,19 @@ of the specified range (i.e., from `lo` to `hi`). After a call to `bubble`,
    in `BubbleSort.java`. You may want to implement a static `swap` method to help you perform
    the adjacent swaps. 
    
-1. **GROUP MEMBER 1:** Write some code in the `main` method to test the implementation of `bubble`.
-   Make sure you
-   test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
-   Once your group is confident that the code compiles and runs correctly,
-   check `checkstyle`, then stage and commit `BubbleSort.java` to your local repository
-   with tag `"checkpoint-2"`, then **push the changes** up to GitHub. 
+1. **GROUP MEMBER 1:** Write some code in the `main` method of `BubbleSort.java` to test the 
+   implementation of `bubble`. Make sure you
+   test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices. The output
+   of your program should describe the test cases that are executing by including at least: 
+      * the array contents
+      * `hi`, `lo`
+      * Descriptive text around the output describing what the user (TA or instructor) is seeing.
 
-1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository, if needed.
+1. Once your group is confident that the code compiles and runs correctly,
+   make sure your code passes the `checkstyle` audit, then stage and commit `BubbleSort.java` 
+   to your local repository with tag `"checkpoint-2"`, then **push the changes** up to GitHub. 
+
+1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository.
    
 1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
 
@@ -370,7 +375,7 @@ Visually, the algorithm works by breaking up the array into two subsequences: un
 Initially, the unsorted sequence is the entire array and the sorted sequence is empty. After each
 call to `bubble`, we know that the largest value in the range is guaranteed to be at index `hi`.
    
-   1. Here is a trace of the algorithm, one row for each call to `bubble`:
+   * Here is a trace of the algorithm, one row for each call to `bubble`:
    
       | Before              | Call                      | After (Unsorted `/` Sorted) |
       |---------------------|---------------------------|-----------------------------|
@@ -379,7 +384,7 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
       | `[ 2, 3, 1, 4, 5 ]` | `bubble(array, 0, 2, c);` | `[ 2, 1/ 3, 4, 5 ]`         |
       | `[ 2, 1, 3, 4, 5 ]` | `bubble(array, 0, 1, c);` | `[ 1/ 2, 3, 4, 5 ]`         |
       
-   1. Here is an example before and after calling `bubbleSort(array, 0, 4, Integer::compareTo)`
+   * Here is an example before and after calling `bubbleSort(array, 0, 4, Integer::compareTo)`
       on an array with elements `[ 5, 4, 2, 3, 1 ]`:
       
       ```java
@@ -391,12 +396,17 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
    
 1. **GROUP MEMBER 2:** Write some code in the `main` method to test the implementation of `bubbleSort`. You can
    most likely use your `bubble` tests - just change them to do a full `bubbleSort`. Make sure 
-   you test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices.
-   Once your group is confident that the code compiles and runs correctly,
-   check `checkstyle`, then stage and commit `BubbleSort.java` to your local repository
-   with tag `"checkpoint-3"`, then **push the changes** up to GitHub. 
+   you test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices. The output
+   of your program should describe the test cases that are executing by including at least: 
+      * the array contents for each iteration of the algorithm
+      * `hi`, `lo`
+      * Descriptive text around the output describing what the user (TA or instructor) is seeing.
 
-1. **GROUP MEMBER 1:** Pull the changes to your local copy of the repository, if needed.
+1. Once your group is confident that the code compiles and runs correctly,
+   make sure your code passes the `checkstyle` audit, then stage and commit `BubbleSort.java` 
+   to your local repository with tag `"checkpoint-3"`, then **push the changes** up to GitHub. 
+
+1. **GROUP MEMBER 1:** Pull the changes to your local copy of the repository.
    
 1. **EVERYONE:** View the condensed, graphical version of your Git log using `git adog`.
 
@@ -456,7 +466,7 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
    stage and commit `NOTES.md` to your local repository
    with tag `"checkpoint-4"`, then **push the changes** up to GitHub.
    
-1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository, if needed.
+1. **GROUP MEMBER 2:** Pull the changes to your local copy of the repository.
    
 1. **EVERYONE:** Look at the `NOTES.md` file on GitHub.
 
@@ -486,7 +496,7 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
    ```
 
 1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
-   passes the `checkstyle` audit, then stage and commit all changes, if needed.
+   passes the `checkstyle` audit, then stage and commit all changes.
 
 1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
    
