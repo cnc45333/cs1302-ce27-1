@@ -335,7 +335,7 @@ of the specified range (i.e., from `lo` to `hi`). After a call to `bubble`,
    implementation of `bubble`. Make sure you
    test a few different dataypes and vary the starting (`lo`) and ending (`hi`) indices. The output
    of your program should describe the test cases that are executing by including at least: 
-      * the array contents
+      * the array contents before and after the call to `bubble`
       * `hi`, `lo`
       * Descriptive text around the output describing what the user (TA or instructor) is seeing.
 
