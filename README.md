@@ -44,7 +44,7 @@ The Git log in your submitted exercise will help us determine if you met these c
 
 ## Getting Started
 
-1. To get the most out of this exercise, we encourage you to
+1. If you are able to find a partner, we encourage you to
    **form a group of exactly two people for this exercise.**
    
    * **Working in a group?** Some steps in this exercise need be done by each group member individually.
@@ -59,7 +59,7 @@ The Git log in your submitted exercise will help us determine if you met these c
    
    1. [Setup your SSH Keys on Odin and GitHub](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-ssh-keys)
 
-1. **Individually:** If you haven't already done this in a previous exercise, setup your Git username 
+1. **Individually:** If you haven't already done this in a previous exercise/tutorial, setup your Git username 
    and email on Odin by modifiying and executing the commands below. 
    When setting the `user.name` property, please provide your name as it appears on eLC and
    Athena. If you have a preferred name, then you may include it in parentheses. For the
@@ -482,30 +482,38 @@ call to `bubble`, we know that the largest value in the range is guaranteed to b
 
 **Each student needs to individually submit their own work.**
 
-1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
-   directory with the following information:
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce27-ce28`
+   directory with the following information.
 
    1. Your name and UGA ID number;
    1. Collaborator names, if any; and
-   1. The weekly code (listed with the exercise on eLC).
+   1. If you created the API website, include the full link to the site you generated.
    
-   Here is an example:
+   Here is an example of the contents of `SUBMISSION.md`.
    
    ```
    1. Sally Smith (811-000-999)
    2. Collaborators: Joe Allen, Stacie Mack
-   3. Weekly Code: replace-with-actual-code
+   3. https://webwork.cs.uga.edu/~user/cs1302-ce27-ce28-doc
    ```
 
-1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
-   passes the `checkstyle` audit, then stage and commit all changes.
-
-1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
+1. Change directories to the parent of `cs1302-ce27-ce28` (e.g., `cd ..` from `cs1302-ce27-ce28`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+   We won't repeat those steps here and you can view them as optional.
+   
+1. Use the `submit` command to submit this exercise to `csci-1302`:
    
    ```
-   $ submit cs1302-ce27-ce28 cs1302a
+   $ submit cs1302-ce27-ce28 csci-1302
    ```
-     
+   
+   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
+   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
+
+   **Note:** You must be on Odin to submit.
+
 <hr/>
 
 ![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
