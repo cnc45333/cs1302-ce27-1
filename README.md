@@ -1,7 +1,6 @@
 # cs1302-ce27 Paired Sorting Algorithm Analysis
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 In this class exercise, students will prepare for the next exercise by ensuring
 their GitHub accounts and private repositories are setup correctly. Code
@@ -22,11 +21,13 @@ algorithms such as linear search, binary search, quadratic sorts, and linearithm
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
-logged into the Nike server. 
+logged into the Odin server. 
 
 **NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
 command depends on your present working directory), then please note that context as well.
+
+<!--
 
 ![Extra Credit](ecop.png)
 
@@ -38,6 +39,8 @@ We will **double the points** that you earn for this exercise if you meet the fo
 1. Completed all checkpoints.
 
 The Git log in your submitted exercise will help us determine if you met these criteria.
+
+-->
 
 ## Getting Started
 
@@ -54,10 +57,10 @@ The Git log in your submitted exercise will help us determine if you met these c
 
    1. [Setup your Free GitHub Pro Account](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-an-account)
    
-   1. [Setup your SSH Keys on Nike and GitHub](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-ssh-keys)
+   1. [Setup your SSH Keys on Odin and GitHub](https://github.com/cs1302uga/cs1302-tutorials/blob/master/github-setup.md#setting-up-ssh-keys)
 
 1. **Individually:** If you haven't already done this in a previous exercise, setup your Git username 
-   and email on Nike by modifiying and executing the commands below. 
+   and email on Odin by modifiying and executing the commands below. 
    When setting the `user.name` property, please provide your name as it appears on eLC and
    Athena. If you have a preferred name, then you may include it in parentheses. For the
    `user.email` property, please use your `@uga.edu` email address:
@@ -75,10 +78,10 @@ The Git log in your submitted exercise will help us determine if you met these c
    $ git config --global user.email
    ```
    
-1. For this checkpoint, please be ready to show the public key that you generated on Nike both on
-   Nike and on your GitHub account.
+1. For this checkpoint, please be ready to show the public key that you generated on Odin both on
+   Odin and on your GitHub account.
    
-   * To see the copy of your public key on Nike:
+   * To see the copy of your public key on Odin:
      ```
      $ cat ~/.ssh/id_rsa.pub
      ```
@@ -138,7 +141,7 @@ The Git log in your submitted exercise will help us determine if you met these c
    
       Before continuing, make sure each group member has access to the repository website.
   
-1. **GROUP MEMBER 2:** On Nike, use Maven to create a project directory for this exercise 
+1. **GROUP MEMBER 2:** On Odin, use Maven to create a project directory for this exercise 
    called `cs1302-ce27-ce28` with a primary package called `cs1302.sorting`, then change
    into that directory and do the following:
    
@@ -185,7 +188,7 @@ The Git log in your submitted exercise will help us determine if you met these c
    1. Before proceeding, ensure that all tracked files pass `checkstyle` and are committed. 
 
    1. Visit the repository website on GitHub and copy the "SSH" URL (i.e., the `git@github...` URL)
-      under "Quick setup", then follow these instructions on Nike to link your local repository 
+      under "Quick setup", then follow these instructions on Odin to link your local repository 
       to the one on GitHub:
       
       ```
@@ -196,7 +199,7 @@ The Git log in your submitted exercise will help us determine if you met these c
       If successful, everyone should now be able to see the exercise files on the
       repository website on GitHub!
    
-1. **GROUP MEMBER 1:** On Nike, write out the basic skeleton code for a driver class
+1. **GROUP MEMBER 1:** On Odin, write out the basic skeleton code for a driver class
    in `BubbleSort.java` (**you do NOT need to implement it now**; we'll write the algorithm 
    in there later), ensuring that the  package statement is correct and the file compiles 
    and runs using Maven. Then, check `checkstyle`, stage, and commit the change to your local repository.
@@ -223,7 +226,7 @@ The Git log in your submitted exercise will help us determine if you met these c
    If successful, everyone should now be able to see the updated exercise files in
    their local copies!
 
-1. **GROUP MEMBER 2:** On Nike, write out the basic skeleton code for a driver class
+1. **GROUP MEMBER 2:** On Odin, write out the basic skeleton code for a driver class
    in `SelectionSort.java` (we'll write the algorithm in there later), ensuring that the 
    package statement is correct and the file compiles and runs using Maven. Then, check 
    `checkstyle`, stage, and and commit the change to your local repository with
