@@ -173,7 +173,7 @@ The Git log in your submitted exercise will help us determine if you met these c
       
       Add and commit the `.gitignore` file to the local repository.
       
-   1. Update the POM so that the project works with Java 8. After that, add and commit the `pom.xml` file to 
+   1. Update the POM so that the project works with Java 11. After that, add and commit the `pom.xml` file to 
       the local repository.
       
    1. Create blank source code files for future checkpoints:
